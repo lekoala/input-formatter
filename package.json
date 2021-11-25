@@ -1,20 +1,21 @@
 {
-  "name": "input-formatter",
+  "name": "pattern-formatter",
   "version": "1.0.0",
   "description": "Format input as you type",
-  "main": "InputFormatter",
+  "main": "PatternFormatter",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild --bundle --minify --format=esm --sourcemap InputFormatter.js --outfile=InputFormatter.min.js",
+    "build": "esbuild --bundle --minify --format=esm --sourcemap PatternFormatter.js --outfile=PatternFormatter.min.js",
     "start": "npm run build -- --servedir=.",
     "watch": "npm run build -- --watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lekoala/input-formatter"
+    "url": "https://github.com/lekoala/pattern-formatter"
   },
   "keywords": [
     "input",
+    "pattern",
     "formatter",
     "es6"
   ],

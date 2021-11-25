@@ -12,7 +12,7 @@ const PATTERNS = {
   creditcard: "[0-9]{0,4}( [0-9]{0,4})?( [0-9]{0,4})?( [0-9]{0,4})?",
 };
 const SEPARATORS = [" ", ".", ",", "-", ":"];
-class InputFormatter {
+class PatternFormatter {
   /**
    * @param {HTMLInputElement} el
    */
@@ -296,8 +296,8 @@ class InputFormatter {
   }
 
   getDecimalSeparator() {
-    if(this.el.dataset.alias != "currency_locale") {
-      return '.';
+    if (this.el.dataset.alias != "currency_locale") {
+      return ".";
     }
     return Intl.NumberFormat()
       .formatToParts(1.1)
@@ -306,9 +306,9 @@ class InputFormatter {
 
   static init(selector = "input.formatter") {
     document.querySelectorAll(selector).forEach((el) => {
-      new InputFormatter(el);
+      new PatternFormatter(el);
     });
   }
 }
 
-export default InputFormatter;
+export default PatternFormatter;
