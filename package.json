@@ -1,0 +1,23 @@
+{
+  "name": "input-formatter",
+  "version": "1.0.0",
+  "description": "Format input as you type",
+  "main": "InputFormatter",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild --bundle --minify --format=esm --sourcemap InputFormatter.js --outfile=InputFormatter.min.js",
+    "start": "npm run build -- --servedir=.",
+    "watch": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lekoala/input-formatter"
+  },
+  "keywords": [
+    "input",
+    "formatter",
+    "es6"
+  ],
+  "author": "LeKoala",
+  "license": "MIT"
+}

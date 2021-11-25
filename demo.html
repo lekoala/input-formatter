@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <title>Input formatter</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mvp.css@1/mvp.css" />
+  <script type="module">
+    import InputFormatter from "./InputFormatter.js";
+    InputFormatter.init();
+  </script>
+</head>
+
+<body>
+    <p>All inputs get a valid "pattern" attribute and a nice placeholder if possible</p>
+
+    <p>Integer input</p>
+    <input type="text" class="formatter" data-alias="int">
+    <p>Integer input (maxlength=4)</p>
+    <input type="text" class="formatter" data-alias="int" maxlength="4">
+    <p>Decimal input (maxlength=10)</p>
+    <input type="text" class="formatter" data-alias="decimal" maxlength="10">
+    <p>Currency input</p>
+    <input type="text" class="formatter" data-alias="currency">
+    <p>Currency input (locale based)</p>
+    <input type="text" class="formatter" data-alias="currency_locale">
+    <p>ISO Date</p>
+    <input type="text" class="formatter" data-alias="date">
+    <p>ISO Time</p>
+    <input type="text" class="formatter" data-alias="time">
+    <p>Credit card</p>
+    <input type="text" class="formatter" data-alias="creditcard">
+</body>
+
+</html>
