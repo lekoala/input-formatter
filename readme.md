@@ -1,7 +1,7 @@
 # Input Formatter
 
-[![NPM](https://nodei.co/npm/pattern-formattr.png?mini=true)](https://nodei.co/npm/pattern-formattr/)
-[![Downloads](https://img.shields.io/npm/dt/pattern-formattr.svg)](https://www.npmjs.com/package/pattern-formattr)
+[![NPM](https://nodei.co/npm/pattern-formatter.png?mini=true)](https://nodei.co/npm/pattern-formatter/)
+[![Downloads](https://img.shields.io/npm/dt/pattern-formatter.svg)](https://www.npmjs.com/package/pattern-formatter)
 
 ## How to use
 
